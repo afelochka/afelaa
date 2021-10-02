@@ -1,0 +1,50 @@
+﻿<Window x:Class="pr18afela.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr18afela"
+        mc:Ignorable="d"
+        Title="pr18Afela" Height="300" Width="500" Icon="folder.ico" ResizeMode="NoResize">
+    <Grid>
+        <CheckBox x:Name="avtomat" Content="вкл/выкл" HorizontalAlignment="Left" Margin="32,11,0,0" VerticalAlignment="Top" Height="20" Width="79" Click="avtomot_Click"/>
+        <CheckBox x:Name="ruchnoy" Content="вкл/выкл" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Click="ruchnoy_Click" />
+        <GroupBox x:Name="Avtomat" Header="Автоматический расчет" HorizontalAlignment="Left" Margin="10,31,0,0" Width="226" Height="228" VerticalAlignment="Top" IsEnabled="False">
+            <Grid>
+                <RadioButton x:Name="January1" Content="Январь" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Checked="January1_Checked"/>
+                <RadioButton x:Name="February1" Content="Февраль" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Checked="February1_Checked"/>
+                <RadioButton x:Name="March1" Content="Март" HorizontalAlignment="Left" Margin="0,49,0,0" VerticalAlignment="Top" Checked="March1_Checked"/>
+                <RadioButton x:Name="April1" Content="Апрель" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top" Checked="April1_Checked"/>
+                <RadioButton x:Name="May1" Content="Май" HorizontalAlignment="Left" Margin="0,89,0,0" VerticalAlignment="Top" Checked="May1_Checked"/>
+                <RadioButton x:Name="June1" Content="Июнь" HorizontalAlignment="Left" Margin="0,109,0,0" VerticalAlignment="Top" Checked="June1_Checked"/>
+                <RadioButton x:Name="July1" Content="Июль" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Checked="July1_Checked"/>
+                <RadioButton x:Name="August1" Content="Август" HorizontalAlignment="Left" Margin="120,30,0,0" VerticalAlignment="Top" Checked="August1_Checked"/>
+                <RadioButton x:Name="September1" Content="Сентябрь" HorizontalAlignment="Left" Margin="120,49,0,0" VerticalAlignment="Top" Checked="September1_Checked"/>
+                <RadioButton x:Name="October1" Content="Октябрь" HorizontalAlignment="Left" Margin="120,69,0,0" VerticalAlignment="Top" Checked="October1_Checked"/>
+                <RadioButton x:Name="November1" Content="Ноябрь" HorizontalAlignment="Left" Margin="120,89,0,0" VerticalAlignment="Top" Checked="November1_Checked"/>
+                <RadioButton x:Name="December1" Content="Декабрь" HorizontalAlignment="Left" Margin="120,109,0,0" VerticalAlignment="Top" Checked="December1_Checked"/>
+                <Label Content="Ответ" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Otvet1" HorizontalAlignment="Left" Height="23" Margin="10,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="Ruchnoy" Header="Ручной расчет" HorizontalAlignment="Left" Margin="241,31,0,0" Width="241" Height="228" VerticalAlignment="Top" IsEnabled="False">
+            <Grid>
+                <RadioButton x:Name="January" Content="Январь" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" />
+                <RadioButton x:Name="February" Content="Февраль" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="March" Content="Март" HorizontalAlignment="Left" Margin="0,49,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="April" Content="Апрель" HorizontalAlignment="Left" Margin="0,69,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="May" Content="Май" HorizontalAlignment="Left" Margin="0,89,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="June" Content="Июнь" HorizontalAlignment="Left" Margin="0,109,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="July" Content="Июль" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="August" Content="Август" HorizontalAlignment="Left" Margin="120,30,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="September" Content="Сентябрь" HorizontalAlignment="Left" Margin="120,49,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="October" Content="Октябрь" HorizontalAlignment="Left" Margin="120,69,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="November" Content="Ноябрь" HorizontalAlignment="Left" Margin="120,89,0,0" VerticalAlignment="Top"/>
+                <RadioButton x:Name="December" Content="Декабрь" HorizontalAlignment="Left" Margin="120,109,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Otvet" HorizontalAlignment="Left" Height="23" Margin="10,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+                <Button x:Name="otvet" Content="Ответ" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Width="75" Click="otvet_Click"/>
+            </Grid>
+        </GroupBox>
+       
+    </Grid>
+</Window>
